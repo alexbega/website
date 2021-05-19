@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #f2f2f2, #fadae2);
+}
+nav{
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    flex-basis: 20%;
+}
+.logo img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.nav-links ul li a{
+    color: #1ca7ec;
+    text-decoration: none;
+}
+.nav-links ul li a:hover {
+    transition: all 0.3s ease;
+    color: black;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-image: linear-gradient(to top, #6b0f29, #d9829b);
+    padding: 14px 32px;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s;
+}
+.button a{
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    color: #f2f2f2;
+}
+.button:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #875966;
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+button:hover{
+    color: #f2f2f2;
+}
+.button:hover:after{
+    width: 100%;
+}
+.footer {
+     overflow: hidden;
+     background-color: #b5798a;
+     position: fixed;
+     height: 20px;
+     width: 100%;
+     text-align: center;
+     color: wheat;
+     padding: 5px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    bottom: 0;
+ }
+/*first page*/
+.information{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+#circle{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+.feature img{
+    width: 70px;
+}
+.feature{
+    position: absolute;
+    display: flex;
+}
+.feature div{
+    margin-left: 30px;
+}
+.feature div p{
+    margin-top: 8px;
+}
+.one{
+    top: 450px;
+    right: 50px;
+}
+.two{
+    top: 150px;
+    left: 350px;
+    transform: rotate(-90deg);
+}
+.three{
+    top: 450px;
+    left: 50px;
+    transform: rotate(-180deg);
+}
+.four{
+    bottom: 150px;
+    right: 350px;
+    transform: rotate(-270deg);
+}
+.olympus{
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.controls{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.controls h3{
+    margin: 150px 0;
+}
+#upBtn{
+    width: 50px;
+    cursor: pointer;
+}
+#downBtn{
+    width: 50px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 500px solid black;
+    border-right: 500px solid #ffe6ed;
+    border-bottom: 500px solid black;
+    border-left: 500px solid black;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/*cameras, camera lenses, camera accessories, film*/
+.content {
+    margin-top: -20px;
+    height: calc(100vh - 150px);
+    width: 100vw;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: calc(100%/3);
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    height: 325px;
+    width: 300px;
+    box-shadow: 10px 8px 11px 5px #759197;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, #b5798a 0%, #6b0f29 100%);
+    background-size: cover;
+    position: relative;
+}
+.item:hover{
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+.item>img {
+    height: 200px;
+    width: 90%;
+    margin: 5%;
+}
+.item>h2 {
+    text-align: center;
+}
+/*order*/
+.order{
+    background-image: url("images/undraw_make_it_rain_iwk4.png"),linear-gradient(to right, #f2f2f2, #fadae2) ;
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    width: 360px;
+    height: 400px;
+    margin: 8% auto;
+    background: #fadae2;
+    border-radius: 8px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.container h3{
+    margin-bottom: 40px;
+    color: gray;
+}
+.container form{
+    width: 280px;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+}
+form input{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    color: #999;
+}
+form select{
+    width: 10%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    color: #999;
+}
+.orders{
+    width: 10%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    color: #999;
+    text-align: right;
+}
+::placeholder{
+    color: gray;
+}
+.btn-box{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+form button{
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    background: linear-gradient(to right,#6b0f29, #d9829b);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #fadae2;
+    cursor: pointer;
+}
+#secondForm{
+    left: 450px;
+}
+#thirdForm{
+    left: 450px;
+}
+.step-row{
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #000;
+    position: relative;
+}
+.step-column{
+    width: 120px;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+#progress{
+    position: absolute;
+    width: 120px;
+    height: 100%;
+    background: linear-gradient(to right,#6b0f29, #d9829b);
+    transition: 1s;
+}
+#progress::after{
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    border-left: 20px solid #d9829b;
+}
